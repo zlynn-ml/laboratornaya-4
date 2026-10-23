@@ -1,0 +1,51 @@
+# =========================================================================
+# Исключения для компиляторов и систем сборки (Visual Studio, CMake и др.)
+# =========================================================================
+
+# Папки со сборками (скомпилированный код, .exe, .obj)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+out/
+
+# Временные файлы и кэш Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+
+# Временные файлы компиляции (объектные файлы, логи, библиотеки)
+*.obj
+*.ilk
+*.pdb
+*.tlog
+*.lastbuildstate
+*.idb
+*.exe
+*.dll
+*.lib
+*.so
+*.dylib
+*.a
+
+# Системы сборки CMake и CLion / JetBrains
+.cmake/
+CMakeCache.txt
+CMakeFiles/
+CMakeSettings.json
+CMakeUserPresets.json
+.idea/
+
+# Прекомпилированные заголовки
+*.pch
+
+# Скрытые файлы операционных систем
+.DS_Store
+Thumbs.db
