@@ -9,7 +9,7 @@ using namespace std;
 
 int main() {
 	setlocale(LC_ALL, "Russian");
-	int P = -1, p = 0;
+	int P = -1, p = 0, k;
 	int def = 0, def_ = -1, n = 1, n_ = 0;
 	while (P < 0 || P > 10000) {
 		cout << "\nВведите начальное значение: \n";
@@ -17,11 +17,14 @@ int main() {
 		if(P < 0 || P > 10000)
 			cout << "\nНеверное значение, введите снова: \n";
 	}
-	for (;n <= 20; n++) {
+	cin >> k;
+	for (n <= k; n++) {
 		cout << "Введите значение за "<< n << " день: \n";
 		cin >> p;
-		if (p < P)
-			break;
+		if (p < P){
+			cout << "error";
+			return 1;
+		}
 		def += p - P;
 		if (p - P > def_) {
 			def_ = p - P;
